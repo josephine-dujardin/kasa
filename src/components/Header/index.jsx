@@ -1,6 +1,6 @@
-import "../style/banner.css"
+import "../../style/header.css"
 
-function Banner() {
+function Header() {
   return (
     <div className="kasa-banner">
     <h1>Kasa</h1>
@@ -8,4 +8,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Header
