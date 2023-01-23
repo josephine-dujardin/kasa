@@ -1,24 +1,20 @@
 import React from 'react'
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import "./style/index.css";
+import GlobalStyle from './utils/style/GlobalStyle'
 
 import Home from './pages/Home'
 import About from './pages/About/About'
 import Logement from './pages/Logement'
 import NotFound from './pages/NotFound'
+import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Router>
-       <nav>
-          <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/a-propos">à propos</Link></li>
-            <li><Link to="/logement">Logement</Link></li>
-          </ul>
-        </nav>
+      <GlobalStyle />
+       <Header />
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/a-propos" element={<About/>}/>
