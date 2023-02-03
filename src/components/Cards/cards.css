@@ -1,0 +1,23 @@
+.card_image {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_image:hover {
+    filter: brightness(65%);
+}
+
+.card_title {
+    margin: 20px 40px;
+    width: 300px;
+    position: absolute;
+    margin-top: 270px;
+    color: white;
+    z-index: 5;
+}

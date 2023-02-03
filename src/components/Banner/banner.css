@@ -1,0 +1,25 @@
+.banner_container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 70px;
+}
+
+.banner_title {
+    font-size: 42px;
+    position: absolute;
+    font-weight: normal;
+    align-self: center;
+    color: white;
+}
+
+.banner_wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+    filter: brightness(55%);
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/shoreline.png");
+}

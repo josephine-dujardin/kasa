@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import GlobalStyle from './utils/style/GlobalStyle'
@@ -12,14 +12,14 @@ import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <Router>
-      <GlobalStyle />
-       <Header />
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/a-propos" element={<About/>}/>
-          <Route exact path="/logement" element={<Logement/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Routes>
-    </Router>
-  );
+  <Router>
+    <GlobalStyle />
+    <Header />
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/a-propos" element={<About />} />
+      <Route exact path="/logement/:logementId" element={<Logement />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </Router>
+);
