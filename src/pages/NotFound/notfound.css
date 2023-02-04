@@ -1,0 +1,25 @@
+.div-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-404 {
+    font-size: 250px;
+    margin-block-start: 0.23em;
+    margin-block-end: 0.13em;
+    color: #FF6060;
+}
+
+.text-404 {
+    font-size: 35px;
+    color: #FF6060;
+}
+
+.link-404 {
+    margin: 100px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FF6060;
+}
