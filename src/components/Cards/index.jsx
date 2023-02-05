@@ -15,7 +15,7 @@ const Card = (props) => {
       }
     )
       .then(function (response) {
-        console.log(response)
+        // console.log(response)
         return response.json();
       })
       .then(function (myJson) {
@@ -25,16 +25,16 @@ const Card = (props) => {
   useEffect(() => {
     getData()
   }, [])
+
   return (
     <>
       {(
         data && data.length > 0 && data.map(logement => (
           <Link key={logement.id} to={`/logement/${logement.id}`}>
-            <div className="card_title">{logement.title}</div>
-            <div className="card_image" style={{ backgroundImage: `url(${logement.cover})` }}
-              key={logement.id}
-            >
-            </div>
+            <p className='card_title'>{logement.title}</p>
+            <img
+              className="card_image" key={logement.id} src={logement.cover} alt="Logement"
+            />
           </Link>
         ))
       )}

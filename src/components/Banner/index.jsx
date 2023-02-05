@@ -1,13 +1,16 @@
 import './banner.css'
 
-function Banner() {
-
+const Banner = (props) => {
   return (
-    <span className="banner_container">
-      <div className="banner_wrapper"></div>
-      <span className="banner_title"><p>Chez vous, partout et ailleurs</p></span>
-    </span>
-  )
-}
+    <div
+      className="banner_container"
+    >
+      <img
+        className="banner_wrapper" src={props.image} alt="Bannière"
+      />
+      <p className='banner_title'>{props.text}</p>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;
