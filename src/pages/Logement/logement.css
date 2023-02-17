@@ -1,0 +1,20 @@
+.logement_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 70px;
+}
+
+.dropdown_container {
+    margin: 30px 70px;
+    flex-direction: row;
+}
+
+.description {
+    width: 100%;
+    margin-right: 25px;
+}
+
+.equipements {
+    width: 100%;
+    margin-left: 25px;
+}
