@@ -1,35 +1,16 @@
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Hooks } from '../../utils/hooks';
 import './cards.css'
 
-const Card = (props) => {
-  const [data, setData] = useState([]);
+const Card = () => {
 
-  const getData = () => {
-    fetch('data.json'
-      , {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }
-    )
-      .then(function (response) {
-        // console.log(response)
-        return response.json();
-      })
-      .then(function (myJson) {
-        setData(myJson)
-      });
-  }
-  useEffect(() => {
-    getData()
-  }, [])
+  const apiData = Hooks();
 
   return (
     <>
       {(
-        data && data.length > 0 && data.map(logement => (
+        apiData && apiData.length > 0 && apiData.map(logement => (
           <Link key={logement.id} to={`/logement/${logement.id}`}>
             <p className='card_title'>{logement.title}</p>
             <img
