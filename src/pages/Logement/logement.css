@@ -4,8 +4,9 @@
     margin: 30px 70px;
 }
 
-.dropdown_container {
+.span_dropdown_container {
     margin: 30px 70px;
+    display: flex;
     flex-direction: row;
 }
 

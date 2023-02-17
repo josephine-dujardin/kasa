@@ -6,7 +6,6 @@ const Dropdown = (props) => {
 
     const toggleDropdown = () => setOpen(!isOpen);
 
-
     return (
         <div className='dropdown'>
             <div className='dropdown-header' onClick={toggleDropdown}>
@@ -14,11 +13,12 @@ const Dropdown = (props) => {
                 <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
             </div>
             <div className={`dropdown-body ${isOpen && 'open'}`}>
-
                 <div className="dropdown-item">
                     {props.text}
                 </div>
-
+                <div className="dropdown-list-item">
+                    <ul className="ul-list-item">{props.list}</ul>
+                </div>
             </div>
         </div>
     )
