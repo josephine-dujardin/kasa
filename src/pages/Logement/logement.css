@@ -19,3 +19,8 @@
     width: 100%;
     margin-left: 25px;
 }
+
+.host-rating {
+    display: flex;
+    flex-direction: column;
+}

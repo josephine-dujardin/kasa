@@ -7,6 +7,7 @@ import Dropdown from '../../components/Dropdown';
 import { Hooks } from '../../utils/hooks';
 import { useParams } from "react-router-dom";
 import './logement.css';
+import StarRating from '../../components/Star';
 
 export function Logement() {
 
@@ -35,7 +36,10 @@ export function Logement() {
             <Carousel />
             <span className="logement_container">
                 <Description />
-                <Host />
+                <div className="host-rating">
+                    <Host />
+                    <StarRating />
+                </div>
             </span>
             <span className="span_dropdown_container">
                 {descriptionArray && descriptionArray.length > 0 && descriptionArray.map((logement, i) => (
