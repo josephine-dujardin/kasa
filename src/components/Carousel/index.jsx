@@ -1,32 +1,3 @@
-// import './carousel.css'
-// import { Hooks } from '../../utils/hooks';
-// import { useParams } from "react-router-dom";
-// import React from 'react';
-
-// export const Carousel = () => {
-//     const apiData = Hooks();
-//     const { logementId } = useParams();
-//     const array = []
-
-//     const logementSelected = apiData.find((logement) => logement.id === logementId);
-
-//     array.push(logementSelected)
-//     // console.log(array)
-
-//     return (
-//         array && array.length > 0 && array.map((logement, i) => (
-//             <div key={i}>
-//                 <p className='logement_title'>{logement?.title}</p>
-//                 <img
-//                     className="logement_image" key={i} src={logement?.cover} alt="Logement"
-//                 />
-//             </div>
-//         ))
-//     )
-// };
-
-// export default Carousel
-
 import React, { useState, useEffect } from "react";
 import { Hooks } from '../../utils/hooks';
 import { useParams } from "react-router-dom";

@@ -17,14 +17,20 @@
   }
 
   .dropdown-body {
-      padding: 5px;
       color: #FF6060;
       border-radius: 0px 0px 10px 10px;
-      display: none;
+      overflow: hidden;
+      max-height: 250px;
   }
 
   .dropdown-body.open {
       display: block;
+      transition: max-height 1s;
+  }
+
+  .dropdown-body.false {
+      max-height: 0px;
+      transition: max-height 1s;
   }
 
   .dropdown-item {
