@@ -1,6 +1,5 @@
 .section {
     padding: 0px 70px;
-    margin-bottom: 70px;
 }
 
 .section-center {
@@ -20,8 +19,7 @@
 .prev,
 .next {
     position: absolute;
-    top: 250px;
-    transform: translateY(-50%);
+    top: 230px;
     background: transparent;
     color: white;
     display: grid;
