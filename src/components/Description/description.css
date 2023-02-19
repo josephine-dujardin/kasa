@@ -9,7 +9,7 @@
 
 .housing-tags {
     display: flex;
-    right: 15px;
+    right: 7px;
     position: relative;
 }
 
@@ -17,6 +17,28 @@
     color: white;
     background-color: #FF6060;
     padding: 5px 15px;
-    margin: 0px 15px;
+    margin: 0px 7px;
     border-radius: 7px;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 900px) {
+    .housing-title {
+        font-size: 14px;
+    }
+
+    .housing-tags {
+        flex-wrap: wrap;
+    }
+
+    .tags {
+        margin: 7px 7px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .housing-title {
+        font-size: 12px;
+    }
 }

@@ -10,3 +10,18 @@
 .fa-solid {
     color: #FF6060;
 }
+
+/* Responsive tablet */
+@media screen and (max-width: 900px) {
+    .fa-star {
+        font-size: 25px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .fa-star {
+        font-size: 15px;
+        padding: 3px;
+    }
+}

@@ -21,3 +21,10 @@
 .footer_text {
     color: white;
 }
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .footer_text {
+        text-align: center;
+    }
+}

@@ -13,13 +13,9 @@ function Header() {
 
         <nav className="nav_banner">
           <NavLink to="/" style={({ isActive }) => ({
-            color: isActive ? '#FF6060' : '#FF6060',
-            fontSize: isActive ? '20px' : '20px',
             textDecoration: isActive ? 'underline' : 'none',
           })}>Accueil</NavLink>
           <NavLink to="/a-propos" style={({ isActive }) => ({
-            color: isActive ? '#FF6060' : '#FF6060',
-            fontSize: isActive ? '20px' : '20px',
             textDecoration: isActive ? 'underline' : 'none',
           })}>A propos</NavLink>
         </nav>
