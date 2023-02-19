@@ -22,3 +22,19 @@
     color: white;
     z-index: 5;
 }
+
+/* Responsive tablet */
+@media screen and (max-width: 980px) {
+    .card_image {
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .card_title {
+        width: 230px;
+        margin-left: 20px;
+    }
+}

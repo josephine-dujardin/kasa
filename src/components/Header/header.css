@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav_banner {
@@ -15,4 +18,29 @@
     justify-content: space-between;
     align-items: center;
     color: #FF6060;
+}
+
+.nav_banner a {
+    color: rgb(255, 96, 96);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .div_container {
+        padding: 30px 30px;
+    }
+
+    .home_logo {
+        height: 30px;
+    }
+
+    .nav_banner {
+        width: 145px;
+    }
+
+    .nav_banner a {
+        font-size: 15px;
+    }
 }

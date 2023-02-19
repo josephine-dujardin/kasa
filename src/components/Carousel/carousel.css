@@ -1,5 +1,8 @@
 .section {
     padding: 0px 70px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-center {
@@ -82,4 +85,49 @@ article.lastSlide {
 
 article.nextSlide {
     transform: translateX(100%);
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 900px) {
+    .section-center {
+        height: 400px;
+    }
+
+    .logement_image {
+        height: 400px;
+    }
+
+    .prev,
+    .next {
+        top: 175px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .section {
+        padding: 0px 30px;
+    }
+
+    .section-center {
+        height: 320px;
+    }
+
+    .logement_image {
+        height: 320px;
+    }
+
+    .prev,
+    .next {
+        top: 142px;
+        margin: 0px 6px;
+    }
+
+    .icon-arrow {
+        font-size: 30px;
+    }
+
+    .bullet_points {
+        display: none;
+    }
 }

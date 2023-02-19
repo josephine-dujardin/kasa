@@ -20,7 +20,7 @@
       color: #FF6060;
       border-radius: 0px 0px 10px 10px;
       overflow: hidden;
-      max-height: 250px;
+      max-height: 450px;
   }
 
   .dropdown-body.open {
@@ -60,4 +60,11 @@
 
   .icon.open {
       transform: rotate(90deg);
+  }
+
+  /* Responsive mobile */
+  @media screen and (max-width: 650px) {
+      .dropdown-body {
+          font-size: 15px;
+      }
   }
