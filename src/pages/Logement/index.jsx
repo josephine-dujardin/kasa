@@ -5,15 +5,21 @@ import Description from '../../components/Description';
 import Host from '../../components/Host';
 import Dropdown from '../../components/Dropdown';
 import { Hooks } from '../../utils/hooks';
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import './logement.css';
 import StarRating from '../../components/Star';
 
 export function Logement() {
-
     const apiData = Hooks();
     const { logementId } = useParams();
     const logementSelected = apiData.find((logement) => logement.id === logementId);
+
+    const navigate = useNavigate();
+
+    //redir on 404 
+    if (logementSelected === undefined) {
+        navigate('/notfound');
+    }
 
     // Description Data Dropdown
 
