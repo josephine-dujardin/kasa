@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.c3070685.css",
+    "main.js": "/kasa/static/js/main.b0683d0c.js",
+    "static/media/moutain.png": "/kasa/static/media/moutain.791fd750b315b1f022f2.png",
+    "static/media/shoreline.png": "/kasa/static/media/shoreline.1564f1df27b6dc85eba6.png",
+    "static/media/logo.svg": "/kasa/static/media/logo.b155131fa8b9f91a4a2958af7541fd8b.svg",
+    "index.html": "/kasa/index.html",
+    "main.c3070685.css.map": "/kasa/static/css/main.c3070685.css.map",
+    "main.b0683d0c.js.map": "/kasa/static/js/main.b0683d0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3070685.css",
+    "static/js/main.b0683d0c.js"
+  ]
+}
