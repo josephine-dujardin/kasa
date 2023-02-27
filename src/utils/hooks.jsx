@@ -5,7 +5,7 @@ export function Hooks() {
     const [data, setData] = useState([]);
 
     const getData = () => {
-        fetch('http://localhost:3000/data.json'
+        fetch('https://josephine-dujardin.github.io/kasa/data.json'
             , {
                 headers: {
                     'Content-Type': 'application/json',
