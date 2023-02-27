@@ -5,7 +5,7 @@ export function Hooks() {
     const [data, setData] = useState([]);
 
     const getData = () => {
-        fetch('../data.json'
+        fetch('http://localhost:3000/data.json'
             , {
                 headers: {
                     'Content-Type': 'application/json',

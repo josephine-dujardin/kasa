@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.c3070685.css",
-    "main.js": "/kasa/static/js/main.caa8e7ed.js",
+    "main.js": "/kasa/static/js/main.02dc39ac.js",
     "static/media/moutain.png": "/kasa/static/media/moutain.791fd750b315b1f022f2.png",
     "static/media/shoreline.png": "/kasa/static/media/shoreline.1564f1df27b6dc85eba6.png",
     "static/media/logo.svg": "/kasa/static/media/logo.b155131fa8b9f91a4a2958af7541fd8b.svg",
     "data.json": "/kasa/data.json",
     "index.html": "/kasa/index.html",
     "main.c3070685.css.map": "/kasa/static/css/main.c3070685.css.map",
-    "main.caa8e7ed.js.map": "/kasa/static/js/main.caa8e7ed.js.map"
+    "main.02dc39ac.js.map": "/kasa/static/js/main.02dc39ac.js.map"
   },
   "entrypoints": [
     "static/css/main.c3070685.css",
-    "static/js/main.caa8e7ed.js"
+    "static/js/main.02dc39ac.js"
   ]
 }
