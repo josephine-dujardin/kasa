@@ -12,7 +12,7 @@ import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router basename="/">
+  <Router basename="/kasa">
     <GlobalStyle />
     <Header />
     <Routes>
