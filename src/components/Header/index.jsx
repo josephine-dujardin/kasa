@@ -7,15 +7,15 @@ function Header() {
   return (
     <header>
       <div className="div_container">
-        <Link to="/">
+        <Link to="/kasa/">
           <img alt='kasa_logo' src={logo} className="home_logo" />
         </Link>
 
         <nav className="nav_banner">
-          <NavLink to="/" style={({ isActive }) => ({
+          <NavLink to="/kasa/" style={({ isActive }) => ({
             textDecoration: isActive ? 'underline' : 'none',
           })}>Accueil</NavLink>
-          <NavLink to="/a-propos" style={({ isActive }) => ({
+          <NavLink to="/kasa/a-propos" style={({ isActive }) => ({
             textDecoration: isActive ? 'underline' : 'none',
           })}>A propos</NavLink>
         </nav>

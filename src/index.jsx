@@ -16,9 +16,9 @@ root.render(
     <GlobalStyle />
     <Header />
     <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/a-propos" element={<About />} />
-      <Route exact path="/logement/:logementId" element={<Logement />} />
+      <Route exact path="/kasa" element={<Home />} />
+      <Route exact path="/kasa/a-propos" element={<About />} />
+      <Route exact path="/kasa/logement/:logementId" element={<Logement />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>

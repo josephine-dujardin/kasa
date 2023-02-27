@@ -11,7 +11,7 @@ const Card = () => {
     <>
       {(
         apiData && apiData.length > 0 && apiData.map(logement => (
-          <Link key={logement.id} to={`/logement/${logement.id}`}>
+          <Link key={logement.id} to={`/kasa/logement/${logement.id}`}>
             <p className='card_title'>{logement.title}</p>
             <img
               className="card_image" key={logement.id} src={logement.cover} alt="Logement"
